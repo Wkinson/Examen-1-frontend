@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head-topic">
+            <h1 id="title">Wellcome to fist Examen of frontend </h1>
+            <p id="description" >This is the first frontend exam for me in this field of web development.</p>
+        </header>
+        <form id="survey-form" class="form-container" action="post">
+            <div class="item-form">
+                <label id="name-label" for="name" >Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+            </div>
+
+            <div class="item-form">
+                <label id="email-label" for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" required>
+            </div>
+        
+            <div class="item-form">
+                <label id="number-label" for="number">number</label>
+                <input type="number" id="number" name="number" min="0" max="10" placeholder="Enter your number" class="form-control" required>
+            </div>
+        
+            <div class="item-form">
+                <label for="dropdown">elige tu preferencia</label>
+                <select name="dropdown" id="dropdown" class="form-control">
+                    <option disabled selected value>select on option</option>
+                    <option value="frontend">frontend</option>
+                    <option value="backend">backend</option>
+                    <option value="full-stack">full-stack</option>
+                </select>
+            </div>
+
+            <div class="item-form">
+                <h2>area de mallor desarrollar </h2>
+                <label> 
+                    <input type="radio" name="AreaDev" id="front" value="front-end" checked class="imput-radio">
+                    frontend
+                </label>
+
+                <label>
+                    <input type="radio" name="AreaDev" id="back" value="back-end" class="imput-radio">
+                    backend
+                </label>
+
+                <label>
+                    <input type="radio" name="AreaDev" id="full" value="full-stack" class="imput-radio">
+                    full-stack
+                </label>
+            </div>
+
+            <div class="item-form">
+                <h2>preferencia de proyecto a los que deseas trabajar</h2>
+                <label for="pizza">
+                    <input type="checkbox" name="proyectDev" id="front" value="front-end" class="imput-checkbox">
+                    front-end
+                </label>
+
+                <label>
+                    <input type="checkbox" name="proyectDev" id="back" value="back-end" class="imput-checkbox">
+                    back-end
+                </label>
+
+                <label>
+                    <input type="checkbox" name="proyectDev" id="full" value="full-stack"
+                    class="imput-checkbox">
+                    full-stack
+                </label>
+            </div>
+
+            <div class="item-form">
+                <textarea name="comentario" id="comentario" class="imput-textarea" required>Aquí puedes escribir tu mensaje.
+                </textarea>
+            </div>
+
+            <div class="item-form">
+                <button id="submit" type="submit" class="submit">submit</button>
+            </div>
+        
+    </form>
+    </div>
+</body>
+</html>
